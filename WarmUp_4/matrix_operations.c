@@ -18,34 +18,34 @@ void addMatrices(int rows, int column, int a[rows][column], int b[rows][column],
     }
  
  void multiplyMatrices(int rows, int column, int a[rows][column], int b[rows][column], int product[rows][column]) {
-        /*int rows = sizeof(a) / sizeof(a[0]);
-        int column = sizeof(a[0])/row;
-        int[][] product = new int[rows][column];*/
+    int i, j, k;
 
-        // Note: This code doesn't check whether the matrices conform.
-        // Consider adding a check for the A's colums and B's rows n the C version.
-        // Ensure the product has correct dimensions!
+    // Initialize product matrix elements to zero
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < column; j++) {
+            product[i][j] = 0;
+        }
+    }
 
-        int i,j,k;
-        for (i = 0; i < rows; i++) {
-            for (j = 0; j < column; j++) {
-                //product[i][j] = 0;
-                //for (k = 0; k < rows; k++) {
-                    product[i][j] += a[i][k] * b[k][j];
-                //}
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < column; j++) {
+            for (k = 0; k < column; k++) {
+                product[i][j] += a[i][k] * b[k][j];
             }
         }
     }
+}
 
 
     void printMatrix(int rows, int collums, int matrix[rows][collums]) {
     int i, j;
     for (i = 0; i < rows; i++) {
         for (j = 0; j < collums; j++) {
-            printf("%d\n", matrix[i][j]);
+            printf("%d ", matrix[i][j]);
         }
+        printf("\n");
     }
-    }
+}
 
 int main(){
     int matrix1[2][2] = {{1, 2}, {3, 4}};
