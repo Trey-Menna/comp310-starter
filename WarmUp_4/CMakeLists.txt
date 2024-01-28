@@ -1,4 +1,4 @@
-    add_executable(
-        matrix_operations
-        matrix_operations.c
-    )
+add_executable(
+    string_reversal,
+    string_reversal()
+)
