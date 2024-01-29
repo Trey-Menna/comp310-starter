@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void reverseString(char str[]) {
+void string_reversal(char str[]) {
     // Find the length of the string
     int length = 0;
     while (str[length] != '\0') {
@@ -19,7 +19,7 @@ int main() {
     char str[] = "Hello";
     
     // Call the function to reverse the string
-    reverseString(str);
+    string_reversal(str);
     
     // Print the reversed string
     printf("%s\n", str);
