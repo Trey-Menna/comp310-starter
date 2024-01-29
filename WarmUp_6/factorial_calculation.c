@@ -2,6 +2,7 @@
 
 // Function to calculate factorial using recursion
 int factorial(int n) {
+// If number is less than or equal to zero return a fail/1, return n!
     if (n <= 0) {
         return 1;
     } else {
