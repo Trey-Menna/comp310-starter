@@ -54,6 +54,21 @@ TEST(PointTest, Subtract)
     ASSERT_FLOAT_EQ( point_y(&p3), 4.0);
 }
 
+TEST(PointTest, Multiply)
+{
+    point_t p1, p2, p3;
+
+    point_new(&p3);
+    point_init(&p1, 3, 0);
+    point_init(&p2, 0, 4);
+    point_multiply(&p3, &p1);
+    ASSERT_FLOAT_EQ( point_x(&p3), 3.0);
+    ASSERT_FLOAT_EQ( point_y(&p3), 0.0);
+    point_multiply(&p3, &p2);
+    ASSERT_FLOAT_EQ( point_x(&p3), 3.0);
+    ASSERT_FLOAT_EQ( point_y(&p3), 4.0);
+}
+
 TEST(PointTest, Distance)
 {
     point_t p1, p2, p3;
