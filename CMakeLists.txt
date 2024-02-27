@@ -36,6 +36,7 @@ add_subdirectory(WarmUp_7)
 add_subdirectory(WarmUp_8)
 add_subdirectory(WarmUp_9)
 add_subdirectory(R-FROTH)
+add_subdirectory(simple_adt)
 
 
 # You can use add_subdirectory() to add your own work. 
