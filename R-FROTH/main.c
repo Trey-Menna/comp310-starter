@@ -4,6 +4,32 @@
 #include <ctype.h>
 #include <stdlib.h>
 
+// Define stack structure
+#define STACK_SIZE 100
+int stack[STACK_SIZE];
+int stack_pointer = 0;
+
+// Function to push a value onto the stack
+void push(int value) {
+    if (stack_pointer < STACK_SIZE) {
+        stack[stack_pointer++] = value;
+    } else {
+        printf("Error: Stack overflow\n");
+        exit(EXIT_FAILURE);
+    }
+}
+
+// Function to pop a value from the stack
+int pop() {
+    if (stack_pointer > 0) {
+        return stack[--stack_pointer];
+    } else {
+        printf("Error: Stack underflow\n");
+        exit(EXIT_FAILURE);
+    }
+}
+
+
 // Maximum number of variables
 #define MAX_VARIABLES 100
 
