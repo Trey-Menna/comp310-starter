@@ -8,7 +8,9 @@ typedef enum {
     NUMBER,
     OPERATOR,
     SYMBOL,
-    WORD
+    WORD,
+    VARIABLE,
+    CONSTANT
 } token_type_t;
 
 // Struct to represent a token
