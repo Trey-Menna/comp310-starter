@@ -7,9 +7,14 @@ This is a starter repository for COMP 310 (Operating Systems) students. You shou
 - Separate compilation
 - Build automation using CMake
 - Unit testing using GoogleTest
+- Add support for variables and constants.
+- Add support for conditions (boolean expressions)
+- Add support for conditionals (e.g. if-else) and loops
+- Add support for functions
+- Add support for the "REPL" of FORTH
 
 
-## Group R-forth
+# Group R-forth
 - Title
 - Team name and List of all team members
 - What language you will use in your project (C, C++, Go, or Rust). You are required to use one of these.
